@@ -34,7 +34,39 @@
         }
         echo "</table>";
 
+        echo"<h3>création de deux paquets</h3>";
 
+        $paquet1 = array_slice($tabCarte, 0, 26);
+        $paquet2 = array_slice($tabCarte, 26, 26);
+
+        echo"<h4>Paquet 1</h4>";
+        
+        echo "<table>";
+        for ($i=0; $i < 2 ; $i++) 
+        { 
+            echo "<tr>";
+            for($j=13*$i; $j<13*($i+1); $j++)
+            {
+                echo "<td>$paquet1[$j]</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+
+        echo"<h4>Paquet 2</h4>";
+
+        echo "<table>";
+        for ($i=0; $i < 2 ; $i++) 
+        { 
+            echo "<tr>";
+            for($j=13*$i; $j<13*($i+1); $j++)
+            {
+                echo "<td>$paquet2[$j]</td>";
+            }
+            echo "</tr>";
+        }
+        echo "</table>";
+                
         ?>
 
 </body>
